@@ -1,12 +1,12 @@
 package com.inventory.app.service;
 
-import java.util.ArrayList;
+import java.util.List;
 
-import com.inventory.app.dto.products.ProductDTO;
+import com.inventory.app.controller.model.Product;
 
 public interface ProductServices {
 
-	ArrayList<ProductDTO> getAllProducts(String Filter);
+	List<Product> getAllProducts(String Filter);
 	
-	ArrayList<ProductDTO> getProductsById(String id);
+	Product getProductsById(String id);
 }
